@@ -6,9 +6,7 @@ export default function DogListItem({ dog, updateDogAttendance, removeDog }) {
       <span
         onClick={() => updateDogAttendance(dog.id)}
         style={
-          dog.present
-            ? { textDecoration: "none" }
-            : { textDecoration: "line-through" }
+          dog.present ? { textDecoration: "none" } : { textDecoration: "line-through" }
         }
       >
         {dog.name}{" "}
